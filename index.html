@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điền thông tin của bạn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login">
+        <h2>NHẬP THÔNG TIN</h2><br>
+        <p>Tên của bạn</p><br>
+        <input id="username" type="username" placeholder="Enter name"><br>
+        <p>Số điện thoại</p><br>
+        <input id="phone" type="password" placeholder="Enter phone number"><br><br>
+        <div><button onclick="dang_nhap()">Hoàn tất</button></div>
+    </div>
+</body>
+<div id="ket_qua"></div>
+<script>
+var dang_nhap=function(){
+    var username=document.getElementById("username").value
+    var phone=document.getElementById("phone").value
+    ket_qua="<h2>ĐIỀN THÔNG TIN HOÀN TẤT<h2><br>"+
+            "<p> Tên của tôi : <span>" + username + " "+"<span></p><br><br>"+
+            "<p> Số điện thoại : <span>" + phone + " "+"<span></p><br>"
+    document.getElementById("ket_qua").innerHTML=ket_qua
+}
+</script>
+</html>

@@ -1,0 +1,47 @@
+body{
+    background-color: #1c8ef8;
+    font-family: sans-serif;
+}
+.login{
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: grey;
+    background-color: aliceblue;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    width: 300px;
+    height: 330px;
+    padding: 30px;
+}
+.login h2{
+    display: inline-block;
+}
+.login input{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+.login button{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 5px
+}
+.login button :active{
+    background-color: yellow;
+}
+p{
+    float: left;
+    padding-left: 50px;
+    margin: 0px
+}
+#ket_qua{
+    text-align: center;
+    margin-top: 10px;
+    height: 220px;
+}
