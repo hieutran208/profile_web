@@ -11,6 +11,13 @@
         <h2>NHẬP THÔNG TIN</h2><br>
         <p>Tên của bạn</p><br>
         <input id="username" type="username" placeholder="Enter name"><br>
+        <p>Trường</p><br>
+        <select id="university">
+            <option value="Đại học Bách Khoa Hà Nội">Đại học Bách Khoa Hà Nội</option>
+            <option value="Đại học FPT">Đại học FPT</option>
+            <option value="Đại học Công Nghệ-ĐHQGHN">Đại học Công Nghệ-ĐHQGHN</option>
+            <option value="Học Viện Công nghệ Bưu Chính Viễn Thông">Học Viện Công nghệ Bưu Chính Viễn Thông</option>
+        </select>
         <p>Số điện thoại</p><br>
         <input id="phone" type="password" placeholder="Enter phone number"><br><br>
         <div><button onclick="dang_nhap()">Hoàn tất</button></div>
@@ -21,8 +28,10 @@
 var dang_nhap=function(){
     var username=document.getElementById("username").value
     var phone=document.getElementById("phone").value
+    var university=document.getElementById("university").value
     ket_qua="<h2>ĐIỀN THÔNG TIN HOÀN TẤT<h2><br>"+
-            "<p> Tên của tôi : <span>" + username + " "+"<span></p><br><br>"+
+            "<p> Họ và tên : <span>" + username + " "+"<span></p><br><br>"+
+            "<p> Trường : <span>" + university + " "+"<span></p><br><br>"+
             "<p> Số điện thoại : <span>" + phone + " "+"<span></p><br>"
     document.getElementById("ket_qua").innerHTML=ket_qua
 }
